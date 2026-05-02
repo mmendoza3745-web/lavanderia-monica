@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.lavanav {
+    background: linear-gradient(135deg, #0a6fd4 0%, #1a8be8 50%, #0d7de0 100%);
+    border-bottom: 4px solid #f9d12e;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Logo icono */
+.brand-icon {
+    width: 52px;
+    height: 52px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f9d12e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+/* Texto del logo */
+.brand-top {
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    color: #f9d12e;
+    text-shadow: 1px 1px 0 #b8860b, 2px 2px 0 rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+}
+
+.brand-name {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow:
+        -1px -1px 0 #7b2fbe,
+        1px -1px 0 #7b2fbe,
+        -1px 1px 0 #7b2fbe,
+        1px 1px 0 #7b2fbe,
+        2px 3px 0 rgba(0, 0, 0, 0.3);
+    line-height: 1;
+}
+
+/* Links de navegación */
+.lavanav .nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.lavanav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #f9d12e;
+    border-radius: 2px;
+    transition: width 0.25s ease;
+}
+
+.lavanav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #f9d12e !important;
+}
+
+.lavanav .nav-link:hover::after,
+.lavanav .nav-link.active::after {
+    width: 60%;
+}
+
+.lavanav .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f9d12e !important;
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+    background: #25d366 !important;
+    border: 2px solid #1da851 !important;
+    border-radius: 50px !important;
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease !important;
+}
+
+.btn-whatsapp:hover {
+    background: #1da851 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Toggler en mobile */
+.lavanav .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lavanav .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: url('img/fondo-burbujas.png');
+    background-size: cover;
+}
+
+.hero {
+    background: url('lavanderia.jpg') center/cover no-repeat;
+    color: white;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
